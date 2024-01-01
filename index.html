@@ -5,7 +5,7 @@
         fetch('https://training2023.onrender.com/students')
         .then(response => response.json())
         .then(json => {
-            json.foreach(s => {
+            json.forEach( s => {
                 let li = document.createElement('li');
                     li.innerHTML = s.name;
                     ul.appendChild(li);
